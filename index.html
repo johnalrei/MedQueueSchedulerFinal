@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedQueue - Your Health, On Cue</title>
+    <!-- Phosphor Icons for modern iconography -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="css/styles.css?v=2">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="brand">
+                <img src="assets/logo.jpg" alt="MedQueue Logo" class="logo-img"
+                    onerror="this.onerror=null; this.src='https://placehold.co/150x50/333/FFF?text=MedQueue'">
+            </a>
+            <nav class="nav-links" id="nav-links">
+                <a href="#departments" class="nav-item">Departments</a>
+                <a href="#locations" class="nav-item">Locations</a>
+                <a href="#about" class="nav-item">About Us</a>
+                <a href="#testimonials" class="nav-item">Testimonials</a>
+            </nav>
+            <div class="nav-actions">
+                <a href="#book" class="btn btn-primary d-none-mobile">Book Appointment</a>
+                <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle Menu">
+                    <i class="ph ph-list"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container hero-container">
+                <div class="hero-content fade-in-up">
+                    <span class="badge">#1 Healthcare Scheduler</span>
+                    <h1>Your Health is <br>Our <span class="highlight">Priority</span></h1>
+                    <p>Streamline your medical appointments with MedQueue. Get the care you need without the unnecessary
+                        wait.</p>
+                    <div class="hero-btns">
+                        <a href="#book" class="btn btn-primary">Get Started</a>
+                        <a href="#departments" class="btn btn-outline">Explore More</a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <h3>10+</h3>
+                            <p>Years Experience</p>
+                        </div>
+                        <div class="stat">
+                            <h3>50+</h3>
+                            <p>Specialists</p>
+                        </div>
+                        <div class="stat">
+                            <h3>10k+</h3>
+                            <p>Happy Patients</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image float-animation">
+                    <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        alt="Medical Professional" class="main-img">
+                    <div class="floating-card slide-in-right">
+                        <i class="ph ph-calendar-check card-icon"></i>
+                        <div>
+                            <strong>Easy Scheduling</strong>
+                            <span>Book in seconds</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Departments Section -->
+        <section id="departments" class="departments section-bg">
+            <div class="container text-center">
+                <h2 class="section-title">Medical Departments</h2>
+                <p class="section-subtitle">We offer a wide range of specialized medical services tailored for you.</p>
+
+                <div class="grid grid-3">
+                    <div class="dept-card hover-lift">
+                        <div class="icon-wrapper"><i class="ph ph-heartbeat"></i></div>
+                        <h3>Cardiology</h3>
+                        <p>Expert heart care using advanced diagnostic technology.</p>
+                        <a href="#" class="link">Learn More <i class="ph ph-arrow-right"></i></a>
+                    </div>
+                    <div class="dept-card hover-lift">
+                        <div class="icon-wrapper"><i class="ph ph-brain"></i></div>
+                        <h3>Neurology</h3>
+                        <p>Comprehensive care for brain, spine, and nervous system.</p>
+                        <a href="#" class="link">Learn More <i class="ph ph-arrow-right"></i></a>
+                    </div>
+                    <div class="dept-card hover-lift">
+                        <div class="icon-wrapper"><i class="ph ph-bone"></i></div>
+                        <h3>Orthopedics</h3>
+                        <p>Specialized treatment for bone, joint, and muscle conditions.</p>
+                        <a href="#" class="link">Learn More <i class="ph ph-arrow-right"></i></a>
+                    </div>
+                    <div class="dept-card hover-lift">
+                        <div class="icon-wrapper"><i class="ph ph-baby"></i></div>
+                        <h3>Pediatrics</h3>
+                        <p>Dedicated medical care tailored specifically for children.</p>
+                        <a href="#" class="link">Learn More <i class="ph ph-arrow-right"></i></a>
+                    </div>
+                    <div class="dept-card hover-lift">
+                        <div class="icon-wrapper"><i class="ph ph-eye"></i></div>
+                        <h3>Ophthalmology</h3>
+                        <p>Advanced eye care and vision correction services.</p>
+                        <a href="#" class="link">Learn More <i class="ph ph-arrow-right"></i></a>
+                    </div>
+                    <div class="dept-card hover-lift">
+                        <div class="icon-wrapper"><i class="ph ph-tooth"></i></div>
+                        <h3>Dentistry</h3>
+                        <p>Complete dental care for a healthy, beautiful smile.</p>
+                        <a href="#" class="link">Learn More <i class="ph ph-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Locations Section -->
+        <section id="locations" class="locations">
+            <div class="container">
+                <div class="locations-content">
+                    <div class="locations-info">
+                        <h2 class="section-title">Our Locations</h2>
+                        <p class="section-subtitle">Find a MedQueue affiliated clinic near you.</p>
+
+                        <div class="location-card active"
+                            data-map-src="https://www.google.com/maps?q=Cabuyao+City+Hospital,+Laguna&output=embed">
+                            <h3>Cabuyao City Hospital</h3>
+                            <p><i class="ph ph-map-pin"></i> 123 Cabuyao City, Laguna</p>
+                            <p><i class="ph ph-phone"></i> +63 (555) 123-4567</p>
+                            <p><i class="ph ph-clock"></i> Mon-Fri: 8AM - 8PM</p>
+                        </div>
+                        <div class="location-card"
+                            data-map-src="https://www.google.com/maps?q=Global+Medical+Center+of+Laguna&output=embed">
+                            <h3>Global Medical Center of Laguna</h3>
+                            <p><i class="ph ph-map-pin"></i> Manila S Rd, Cabuyao, Laguna</p>
+                            <p><i class="ph ph-phone"></i> +63 (555) 987-6543</p>
+                            <p><i class="ph ph-clock"></i> 24/7 Emergency Care</p>
+                        </div>
+                    </div>
+                    <div class="locations-map image-wrapper"
+                        style="overflow: hidden; border-radius: 20px; box-shadow: var(--shadow-lg);">
+                        <iframe id="map-iframe"
+                            src="https://www.google.com/maps?q=Cabuyao+City+Hospital,+Laguna&output=embed" width="100%"
+                            height="400" style="border:0; border-radius: inherit; display: block;" allowfullscreen=""
+                            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Segment -->
+        <section id="about" class="about section-bg">
+            <div class="container grid grid-2 align-center">
+                <div class="about-image image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1551076805-e1869033e561?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        alt="Doctor team">
+                </div>
+                <div class="about-text">
+                    <h2 class="section-title">Why Choose MedQueue?</h2>
+                    <p class="section-subtitle text-left">We are dedicated to providing the highest quality healthcare
+                        with exceptional service and state-of-the-art facilities.</p>
+                    <ul class="feature-list">
+                        <li>
+                            <i class="ph-fill ph-check-circle text-primary"></i>
+                            <div>
+                                <strong>Advanced Technology</strong>
+                                <span>Utilizing the latest in medical technology.</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="ph-fill ph-check-circle text-primary"></i>
+                            <div>
+                                <strong>Experienced Doctors</strong>
+                                <span>Our team consists of top-tier specialists.</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="ph-fill ph-check-circle text-primary"></i>
+                            <div>
+                                <strong>Patient-Centric Care</strong>
+                                <span>We put your health and comfort first.</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section id="testimonials" class="testimonials">
+            <div class="container text-center">
+                <h2 class="section-title">Patient Feedback</h2>
+                <p class="section-subtitle">What they are saying about our service.</p>
+                <div class="testimonial-grid grid grid-3">
+                    <div class="review-card hover-lift">
+                        <div class="stars">
+                            <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i
+                                class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i
+                                class="ph-fill ph-star"></i>
+                        </div>
+                        <p>"Booking an appointment was incredibly smooth. I didn't have to wait in line at all! The
+                            doctors were all very attentive to my needs."</p>
+                        <div class="reviewer">
+                            <img src="https://ui-avatars.com/api/?name=Sarah+Jenkins&background=random" alt="Reviewer"
+                                class="avatar">
+                            <h4>Sarah Jenkins</h4>
+                        </div>
+                    </div>
+                    <div class="review-card hover-lift">
+                        <div class="stars">
+                            <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i
+                                class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i
+                                class="ph-fill ph-star"></i>
+                        </div>
+                        <p>"The doctors are extremely attentive and the facility is ultra modern. Highly recommend
+                            MedQueue for anyone!"</p>
+                        <div class="reviewer">
+                            <img src="https://ui-avatars.com/api/?name=Michael+Chen&background=random" alt="Reviewer"
+                                class="avatar">
+                            <h4>Michael Chen</h4>
+                        </div>
+                    </div>
+                    <div class="review-card hover-lift">
+                        <div class="stars">
+                            <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i
+                                class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i
+                                class="ph-fill ph-star"></i>
+                        </div>
+                        <p>"MedQueue changed how I handle my family's checkups. Life is much easier now knowing I can
+                            just use my phone to book."</p>
+                        <div class="reviewer">
+                            <img src="https://ui-avatars.com/api/?name=Emily+Rodriguez&background=random" alt="Reviewer"
+                                class="avatar">
+                            <h4>Emily Rodriguez</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <img src="assets/logo.jpg" alt="MedQueue Logo" class="footer-logo"
+                    onerror="this.onerror=null; this.src='https://placehold.co/150x50/333/FFF?text=MedQueue'">
+                <p>Your Health, On Cue. Revolutionizing the way you access medical care.</p>
+                <div class="socials">
+                    <a href="#" class="social-icon"><i class="ph ph-facebook-logo"></i></a>
+                    <a href="#" class="social-icon"><i class="ph ph-twitter-logo"></i></a>
+                    <a href="#" class="social-icon"><i class="ph ph-instagram-logo"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <a href="#departments">Departments</a>
+                <a href="#locations">Locations</a>
+                <a href="#about">About</a>
+                <a href="#book">Book Appointment</a>
+            </div>
+            <div class="footer-links">
+                <h3>Legal</h3>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Cookie Policy</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 MedQueue. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Book Appointment Modal -->
+    <div id="booking-modal" class="modal">
+        <div class="modal-overlay" id="modal-overlay"></div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Book Appointment</h2>
+                <button class="close-modal-btn" id="close-modal-btn" aria-label="Close"><i class="ph ph-x"></i></button>
+            </div>
+            <div class="modal-body">
+                <form id="booking-form">
+                    <div class="form-group">
+                        <label for="patient-name">Patient's Name</label>
+                        <input type="text" id="patient-name" required placeholder="Enter full name">
+                    </div>
+                    <div class="form-group">
+                        <label for="patient-age">Age</label>
+                        <input type="number" id="patient-age" required placeholder="Enter age" min="0">
+                    </div>
+                    <div class="form-group">
+                        <label for="patient-condition">Patient Condition</label>
+                        <textarea id="patient-condition" required placeholder="Describe condition or symptoms" rows="3"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="appointment-date">Date of Appointment</label>
+                        <input type="date" id="appointment-date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="hospital-select">Select Hospital</label>
+                        <select id="hospital-select" required>
+                            <option value="">-- Choose a Hospital --</option>
+                            <option value="cabuyao">Cabuyao City Hospital</option>
+                            <option value="global">Global Medical Center of Laguna</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline" id="cancel-booking-btn">Cancel</button>
+                <button type="submit" form="booking-form" class="btn btn-primary" id="book-now-btn">Book Now</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
